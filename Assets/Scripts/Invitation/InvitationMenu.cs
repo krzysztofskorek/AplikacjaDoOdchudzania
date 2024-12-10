@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InvitationMenu : MonoBehaviour
 {
@@ -42,5 +43,6 @@ public class InvitationMenu : MonoBehaviour
 
         print(PlayerPrefs.GetFloat("ObecnaWaga"));
         print(PlayerPrefs.GetFloat("WagaDocelowa"));
+        SceneManager.LoadScene(1);
     }
 }
